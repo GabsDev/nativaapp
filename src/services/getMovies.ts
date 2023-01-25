@@ -24,7 +24,6 @@ const fetchMovies = async (
       "&apikey=" +
       process.env.REACT_APP_API_KEY
   );
-  console.log(response.data);
   setTotalResults(response.data.totalResults);
   return response.data.Search;
 };

@@ -18,7 +18,6 @@ interface Props {
 }
 export default function ListMovies(props: Props) {
   const { movies, handleAddToCart } = props;
-  console.log(movies);
   return (
     <React.Fragment>
       <Container>

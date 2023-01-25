@@ -129,9 +129,6 @@ function App() {
     );
   }, [totalResults]);
 
-  console.log(movies);
-  console.log(totalResults);
-  console.log(totalPages);
   return (
     <>
       <NavBar />
@@ -173,13 +170,6 @@ function App() {
               />
             </Grid>
             <Grid item sm={2} md={5}>
-              <MyButton
-                variant="contained"
-                onClick={handleSearchFromApi}
-                startIcon={<AddIcon />}
-              >
-                Search Movie
-              </MyButton>
               <MyButton
                 variant="contained"
                 onClick={handleClearSelection}

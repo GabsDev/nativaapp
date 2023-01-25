@@ -26,11 +26,9 @@ export default function CardMovie(props: Props) {
   const [displayEsRenta, setDisplayesInvitado] = useState("none");
   const [fechaRenta, setFechaRenta] = useState(new Date());
   const [esRenta, setEsRenta] = React.useState<string>("");
-  console.log(movie);
   const navigate = useNavigate();
 
   const handleEsRenta = (event: SyntheticEvent<Element, Event>) => {
-    console.log(event);
     const checkValue = event.target as HTMLInputElement;
     setEsRenta(checkValue.value);
   };
