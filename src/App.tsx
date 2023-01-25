@@ -175,6 +175,13 @@ function App() {
             <Grid item sm={2} md={5}>
               <MyButton
                 variant="contained"
+                onClick={handleSearchFromApi}
+                startIcon={<AddIcon />}
+              >
+                Search Movie
+              </MyButton>
+              <MyButton
+                variant="contained"
                 onClick={handleClearSelection}
                 startIcon={<AddIcon />}
               >

@@ -28,11 +28,6 @@ export default function CardMovie(props: Props) {
   const [esRenta, setEsRenta] = React.useState<string>("");
   console.log(movie);
   const navigate = useNavigate();
-  /*const handleEditVehiculo = () => {
-    localStorage.setItem("placaSeleccionada", vehiculo.placa);
-    let path = `/servicio-administrador-automotor`;
-    navigate(path);
-  };*/
 
   const handleEsRenta = (event: SyntheticEvent<Element, Event>) => {
     console.log(event);
@@ -85,7 +80,6 @@ export default function CardMovie(props: Props) {
                 value="1"
                 control={<Radio color="warning" />}
                 label="Si"
-                name="conduceFuncionario"
                 onChange={handleEsRenta}
               />
               <FormControlLabel
@@ -93,7 +87,6 @@ export default function CardMovie(props: Props) {
                 value="0"
                 control={<Radio color="warning" />}
                 label="No"
-                name="conduceFuncionario"
                 onChange={handleEsRenta}
               />
             </RadioGroup>
