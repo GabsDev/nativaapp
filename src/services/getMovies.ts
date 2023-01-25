@@ -17,7 +17,7 @@ const fetchMovies = async (
   setTotalResults: React.Dispatch<React.SetStateAction<number>>
 ): Promise<ResponseFromApi> => {
   const response = await axios.get(
-    "http://www.omdbapi.com/?s=" +
+    "https://www.omdbapi.com/?s=" +
       searchTerm +
       "&page=" +
       page +
